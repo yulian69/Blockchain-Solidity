@@ -1,0 +1,597 @@
+[
+	{
+		"constant": true,
+		"inputs": [],
+		"name": "getTokenAddress",
+		"outputs": [
+			{
+				"name": "",
+				"type": "address"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [
+			{
+				"name": "sellerId",
+				"type": "bytes32"
+			}
+		],
+		"name": "getSellerById",
+		"outputs": [
+			{
+				"name": "",
+				"type": "address"
+			},
+			{
+				"name": "",
+				"type": "string"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "_tokenAddress",
+				"type": "address"
+			}
+		],
+		"name": "setTokenAddress",
+		"outputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [],
+		"name": "kill",
+		"outputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [],
+		"name": "transferAllTokens",
+		"outputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [],
+		"name": "getSellers",
+		"outputs": [
+			{
+				"name": "",
+				"type": "bytes32[]"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [
+			{
+				"name": "buyerId",
+				"type": "bytes32"
+			}
+		],
+		"name": "getBuyer",
+		"outputs": [
+			{
+				"name": "",
+				"type": "address"
+			},
+			{
+				"name": "",
+				"type": "string"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [],
+		"name": "owner",
+		"outputs": [
+			{
+				"name": "",
+				"type": "address"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "ipfs",
+				"type": "string"
+			}
+		],
+		"name": "updateSeller",
+		"outputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "sender",
+				"type": "address"
+			},
+			{
+				"name": "tokens",
+				"type": "uint256"
+			},
+			{
+				"name": "_tokenAddrress",
+				"type": "address"
+			},
+			{
+				"name": "data",
+				"type": "bytes"
+			}
+		],
+		"name": "receiveApproval",
+		"outputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [],
+		"name": "getBuyerByAddress",
+		"outputs": [
+			{
+				"name": "",
+				"type": "bytes32"
+			},
+			{
+				"name": "",
+				"type": "string"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [
+			{
+				"name": "sellerId",
+				"type": "bytes32"
+			}
+		],
+		"name": "getItems",
+		"outputs": [
+			{
+				"name": "",
+				"type": "bytes32[]"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [
+			{
+				"name": "itemId",
+				"type": "bytes32"
+			}
+		],
+		"name": "getItem",
+		"outputs": [
+			{
+				"name": "",
+				"type": "string"
+			},
+			{
+				"name": "",
+				"type": "uint256"
+			},
+			{
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "addr",
+				"type": "address"
+			},
+			{
+				"name": "tokens",
+				"type": "uint256"
+			}
+		],
+		"name": "transferTokens",
+		"outputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "itemId",
+				"type": "bytes32"
+			},
+			{
+				"name": "ipfs",
+				"type": "string"
+			},
+			{
+				"name": "price",
+				"type": "uint256"
+			},
+			{
+				"name": "quantity",
+				"type": "uint256"
+			}
+		],
+		"name": "updateItem",
+		"outputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "ipfs",
+				"type": "string"
+			},
+			{
+				"name": "price",
+				"type": "uint256"
+			},
+			{
+				"name": "quantity",
+				"type": "uint256"
+			}
+		],
+		"name": "addItem",
+		"outputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [],
+		"name": "getSellerByAddress",
+		"outputs": [
+			{
+				"name": "",
+				"type": "bytes32"
+			},
+			{
+				"name": "",
+				"type": "string"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "ipfs",
+				"type": "string"
+			}
+		],
+		"name": "updateBuyer",
+		"outputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "newOwner",
+				"type": "address"
+			}
+		],
+		"name": "transferOwnership",
+		"outputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"name": "_tokenAddress",
+				"type": "address"
+			}
+		],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "constructor"
+	},
+	{
+		"payable": true,
+		"stateMutability": "payable",
+		"type": "fallback"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": true,
+				"name": "sellerId",
+				"type": "bytes32"
+			},
+			{
+				"indexed": false,
+				"name": "ipfs",
+				"type": "string"
+			},
+			{
+				"indexed": false,
+				"name": "timestamp",
+				"type": "uint256"
+			}
+		],
+		"name": "AddSeller",
+		"type": "event"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": true,
+				"name": "sellerId",
+				"type": "bytes32"
+			},
+			{
+				"indexed": false,
+				"name": "ipfs",
+				"type": "string"
+			},
+			{
+				"indexed": false,
+				"name": "timestamp",
+				"type": "uint256"
+			}
+		],
+		"name": "UpdateSeller",
+		"type": "event"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": true,
+				"name": "buyerId",
+				"type": "bytes32"
+			},
+			{
+				"indexed": false,
+				"name": "ipfs",
+				"type": "string"
+			},
+			{
+				"indexed": false,
+				"name": "timestamp",
+				"type": "uint256"
+			}
+		],
+		"name": "AddBuyer",
+		"type": "event"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": true,
+				"name": "buyerId",
+				"type": "bytes32"
+			},
+			{
+				"indexed": false,
+				"name": "ipfs",
+				"type": "string"
+			},
+			{
+				"indexed": false,
+				"name": "timestamp",
+				"type": "uint256"
+			}
+		],
+		"name": "UpdateBuyer",
+		"type": "event"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": true,
+				"name": "buyerId",
+				"type": "bytes32"
+			},
+			{
+				"indexed": true,
+				"name": "sellerId",
+				"type": "bytes32"
+			},
+			{
+				"indexed": true,
+				"name": "day",
+				"type": "uint256"
+			},
+			{
+				"indexed": false,
+				"name": "itemId",
+				"type": "bytes32"
+			},
+			{
+				"indexed": false,
+				"name": "quantity",
+				"type": "uint256"
+			},
+			{
+				"indexed": false,
+				"name": "amount",
+				"type": "uint256"
+			},
+			{
+				"indexed": false,
+				"name": "timestamp",
+				"type": "uint256"
+			}
+		],
+		"name": "BuyItem",
+		"type": "event"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": true,
+				"name": "itemId",
+				"type": "bytes32"
+			},
+			{
+				"indexed": true,
+				"name": "sellerId",
+				"type": "bytes32"
+			},
+			{
+				"indexed": false,
+				"name": "ipfs",
+				"type": "string"
+			},
+			{
+				"indexed": false,
+				"name": "price",
+				"type": "uint256"
+			},
+			{
+				"indexed": false,
+				"name": "quantity",
+				"type": "uint256"
+			},
+			{
+				"indexed": false,
+				"name": "timestamp",
+				"type": "uint256"
+			}
+		],
+		"name": "AddItem",
+		"type": "event"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": true,
+				"name": "itemId",
+				"type": "bytes32"
+			},
+			{
+				"indexed": true,
+				"name": "sellerId",
+				"type": "bytes32"
+			},
+			{
+				"indexed": false,
+				"name": "ipfs",
+				"type": "string"
+			},
+			{
+				"indexed": false,
+				"name": "price",
+				"type": "uint256"
+			},
+			{
+				"indexed": false,
+				"name": "quantity",
+				"type": "uint256"
+			},
+			{
+				"indexed": false,
+				"name": "timestamp",
+				"type": "uint256"
+			}
+		],
+		"name": "UpdateItem",
+		"type": "event"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": false,
+				"name": "addr",
+				"type": "address"
+			},
+			{
+				"indexed": false,
+				"name": "tokens",
+				"type": "uint256"
+			},
+			{
+				"indexed": false,
+				"name": "timestamp",
+				"type": "uint256"
+			}
+		],
+		"name": "TransferTokens",
+		"type": "event"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": true,
+				"name": "previousOwner",
+				"type": "address"
+			},
+			{
+				"indexed": true,
+				"name": "newOwner",
+				"type": "address"
+			}
+		],
+		"name": "OwnershipTransferred",
+		"type": "event"
+	}
+]

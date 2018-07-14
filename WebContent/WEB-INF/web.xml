@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>Solidity Project</display-name>
+ 	<session-config>
+ 		<session-timeout>15</session-timeout> 		
+    </session-config>
+    
+    <servlet>
+		<servlet-name>Login</servlet-name>
+		<servlet-class>solidity.web.Login</servlet-class>
+	</servlet>	
+	<servlet>
+		<servlet-name>TokenActions</servlet-name>
+		<servlet-class>solidity.web.TokenActions</servlet-class>
+	</servlet>	
+	<servlet>
+		<servlet-name>MarketplaceActions</servlet-name>
+		<servlet-class>solidity.web.MarketplaceActions</servlet-class>
+	</servlet>	
+	<servlet>
+		<servlet-name>SellerActions</servlet-name>
+		<servlet-class>solidity.web.SellerActions</servlet-class>
+	</servlet>	
+	<servlet>
+		<servlet-name>BuyerActions</servlet-name>
+		<servlet-class>solidity.web.BuyerActions</servlet-class>
+	</servlet>	
+	
+	<servlet-mapping>
+		<servlet-name>Login</servlet-name>
+		<url-pattern>/Login</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>TokenActions</servlet-name>
+		<url-pattern>/TokenActions</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>MarketplaceActions</servlet-name>
+		<url-pattern>/MarketplaceActions</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>SellerActions</servlet-name>
+		<url-pattern>/SellerActions</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>BuyerActions</servlet-name>
+		<url-pattern>/BuyerActions</url-pattern>
+	</servlet-mapping>
+		
+	<listener>
+		<listener-class>solidity.web.listener.ProjectSolidityContextListener</listener-class>
+	</listener>
+	
+	<welcome-file-list>
+		<welcome-file>home.jsp</welcome-file>
+  	</welcome-file-list>	
+</web-app>
